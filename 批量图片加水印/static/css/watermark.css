@@ -1,0 +1,14 @@
+.wrapper{margin: 50px 200px;}
+.watermark-box .upload-box{height: 200px;width: 100%; border:1px solid #999999;border-radius: 3px;position: relative;overflow: hidden;overflow-y: auto;}
+.watermark-box .upload-box .ico1{position: absolute;left: 0;right: 0;width: 100%;height: 100%;color: #999;background: rgba(0, 0, 0, 0.1);text-align: center;line-height: 200px;}
+.watermark-box .upload-box input{position: absolute;top: 0;left: -300px;}
+.watermark-box .upload-box .list{display: flex;align-items: center;flex-wrap: wrap;margin: 24px 0;}
+.watermark-box .upload-box .list .img-box{width: 150px;height: 150px;border:1px solid #efefef;margin: 0 5px;border-radius: 3px;overflow: hidden;position: relative;display: none;}
+.watermark-box .upload-box .list .img-box span{position: absolute;right: 5px;top: 0;color: #363636;cursor: pointer;}
+.watermark-box .upload-box .list .ico2{width: 150px;height: 150px;border:1px solid #efefef;margin: 0 5px;border-radius: 3px;text-align: center;line-height: 150px;font-size: 30px;display: none;}
+
+.watermark-box .input-box{height: 50px;width: 100%; border:1px solid #999999;border-radius: 3px;margin: 10px 0;}
+.watermark-box .input-box input{width: 100%;height: 100%;border: 0;background:none;outline: :none;}
+.watermark-box .btns{text-align: center;}
+.watermark-box .btns span{background: red;color: #fff;padding: 10px 20px;cursor: pointer;display: inline-block;margin-bottom: 10px;}
+.watermark-box .btns span:hover{background:#e48585}

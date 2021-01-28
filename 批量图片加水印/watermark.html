@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <title>水印保护</title>
+    <link rel="stylesheet" href="./static//css/watermark.css?v=1">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="tools-box">
+                <div class="watermark-box">    
+                    <div class="upload-box" id="drop_area">
+                        <!-- <input id="upLoad" type="file" name="file" accept="image/gif,image/jpeg,image/jpg,image/png," multiple onchange="getImg(this.files)" /> -->
+                        <input id="upLoad" type="file" name="file" accept="image/gif,image/jpeg,image/jpg,image/png," multiple />
+                        <label class="ico1" for="upLoad" style="display: block;">点击上传单张或多张图片</label>
+                        <div class="list" id="upList"></div>
+                    </div>
+                    <div class="input-box"><input id="contentText" type="text" name="content" placeholder="请输入20以内个字符" /></div>
+                    <div class="btns"><span id="generate">立即生成</span></div>
+                    <!-- <div class="btns"><span onclick="eachDrawingWatermark()" id="generate">立即生成</span></div> -->
+                    <div class="upload-box">
+                        <div class="list" id="downLoad"></div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <canvas id="myCanvas" width="300px" height="200px" style="position: fixed;left: 2000px;top: 2000px;"></canvas> -->
+    <!-- <img id="imgSize" src="" alt="" style="position: fixed;left: 2000px;top: 2000px;"> -->
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/comment.js?v=1"></script>
+    <!-- <script src="/static/js/watermark.js?v=1"></script> -->
+    <script src="./static/js/watermark.min.js"></script>
+    <script>
+        myWaterMark({
+            upId:'upLoad',//上传input ID
+            upListId:'upList', //上传预览框ID
+            downListId:'downLoad', //下载预览框ID
+            textInp:'contentText', // 水印文字输入框ID
+            btnId:'generate', // 按钮ID
+        })
+     </script>
+</body>
+
+</html>
